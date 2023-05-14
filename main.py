@@ -21,6 +21,11 @@ class App(ctk.CTk):
 
         self.title("Video Encryptor")
         self.geometry("800x500")
+        if (sys.platform.startswith('win')): 
+            self.iconbitmap('images/logo.ico')
+        else:
+            logo = PhotoImage(file='images/logo.png')
+            self.call('wm', 'iconphoto', self._w, logo)
 
         # set grid layout 1x2
         self.grid_rowconfigure(0, weight=1)
