@@ -1,0 +1,6 @@
+customtkinter
+numpy
+opencv_python
+Pillow
+pycryptodome
+PyWavelets
